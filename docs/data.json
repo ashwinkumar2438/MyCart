@@ -1,0 +1,37 @@
+{
+    "items":[
+        {
+            "id":"xy123meinuniquehnre",
+            "title":"Milkfood",
+            "name":"Milkfood Rich Desai Danedar Ghee ",
+            "quantity":"1 L",
+            "mrp":"498",
+            "price":"408",
+            "discount":"18",
+            "imagesrc":null,
+            "count":0
+        },
+        {
+            "id":"xyz124unique",
+            "title":"Grofer Mother's Choice",
+            "name":"Grofer Mother's Choice Desi Ghee ",
+            "quantity":"1 L",
+            "mrp":"450",
+            "price":"414",
+            "discount":"8",
+            "imagesrc":null,
+            "count":0
+        },
+        {
+            "id":"xyz125beweird",
+            "title":"Amul",
+            "name":"Amul Pure Ghee ",
+            "quantity":"1 L",
+            "mrp":"460",
+            "price":"439",
+            "discount":null,
+            "imagesrc":null,
+            "count":0
+        }
+    ]
+}

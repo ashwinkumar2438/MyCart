@@ -1,0 +1,47 @@
+.mainbox{
+    display:grid;
+    width:700px;
+    height:200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    border:2px solid burlywood;
+    border-radius: 3px;
+}
+.mainbox>div{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+.discountbox{
+    color:red;
+    font-style: italic;
+}
+.mainbox .contentbox{
+ align-items: flex-start;
+ padding:0px 50px;
+ background-color:lightyellow ;
+}
+.mainbox .buttonsbox{
+    background-color: lightcyan;
+    flex-flow: row;
+}
+.buttonsbox button{
+    background-color: lightgreen;
+    border:2px solid maroon;
+    padding:6px 12px;
+    margin:0px 15px;
+    cursor: pointer;
+}
+.buttonsbox button:hover{
+    background-color:lightcoral;
+    color: white;
+}
+.buttonsbox button:disabled{
+    background-color: lightgray;
+    border:2px solid grey;
+}
+h3,h5,span{
+    margin: 3px;
+    text-align: left;
+}

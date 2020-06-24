@@ -1,0 +1,50 @@
+.table{
+    color:teal;
+    border:1px solid lightyellow;
+    border-collapse: collapse;
+    margin:auto;
+}
+.table td, th{
+    padding:10px 18px;
+}
+.table thead tr{
+    background-color: lightsteelblue;
+}
+.table tbody tr{
+    background-color: lavender;
+}
+.table tbody tr:nth-child(odd){
+    background-color: lavenderblush;
+}
+.maindiv button{
+    border:2px solid teal;
+    color:teal;
+    background-color: linen;
+    font-size:16px;
+    padding:8px 24px;
+    margin:10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.maindiv button:hover:enabled{
+    transform: scale(0.97,0.97);
+    background-color: sandybrown;
+    color:white;
+}
+.maindiv .buy{
+    border:2px solid saddlebrown;
+    color:saddlebrown;
+}
+.maindiv button:disabled{
+    background-color: lightgray;
+    border:2px solid grey;
+    color:grey;
+}
+@media (max-width:1000px){
+    .maindiv{
+        width:90%;
+    }
+    .table td,th{
+        padding:3px 8px;
+    }
+}

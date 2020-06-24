@@ -1,7 +1,7 @@
 .mainbox{
     display:grid;
     width:700px;
-    height:200px;
+    min-height:200px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 1fr;
     border:2px solid burlywood;
@@ -44,4 +44,14 @@
 h3,h5,span{
     margin: 3px;
     text-align: left;
+}
+
+@media (max-width:1000px){
+    .mainbox{
+        width:90%;
+
+    }
+    .mainbox.contentbox{
+        padding:30px;
+    }
 }

@@ -31,3 +31,10 @@
     padding-left:20px;
     vertical-align: middle;
 }
+
+@media (max-width:1000px){
+    .detailbox{
+        width:90%;
+        grid-template-columns: 2fr 1fr;
+    }
+}

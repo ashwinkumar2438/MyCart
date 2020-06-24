@@ -6,3 +6,6 @@ body{
   font-family: 'Lora', serif;
   box-sizing: border-box;
 }
+button:hover:enabled{
+  transform: scale(0.98,0.98);
+}

@@ -25,10 +25,10 @@ const Product=(props)=>{
                 {itemdata.discount?`${itemdata.discount}% OFF`:null}
             </div>
             <div className={buttonsbox}>
-                <button onClick={props.addmethod.bind(null,itemdata.id)}>Add to Cart</button>
-                <button onClick={props.removemethod.bind(null,itemdata.id)} disabled={(itemdata.count<1)?true:false}>-</button>
+                <button onClick={props.updatemethod.bind(null,itemdata.id,1)}>Add to Cart</button>
+                <button onClick={props.updatemethod.bind(null,itemdata.id,-1)} disabled={(itemdata.count<1)?true:false}>-</button>
                 <span>{itemdata.count}</span>
-                <button onClick={props.addmethod.bind(null,itemdata.id)}>+</button>
+                <button onClick={props.updatemethod.bind(null,itemdata.id,1)}>+</button>
 
             </div>
         </div>

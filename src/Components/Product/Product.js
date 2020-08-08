@@ -12,7 +12,7 @@ const Product=(props)=>{
     return (
         <div className={mainbox}>
             <div className={imagebox}>
-                {(itemdata.imagesrc)?<img src={itemdata.imgsrc} />:<div>No Image!</div>}
+                {(itemdata.imagesrc)?<img src={process.env.PUBLIC_URL+"./"+itemdata.imagesrc} />:<div>No Image!</div>}
             </div>
             <div className={contentbox}>
                 <h3>{itemdata.title||""}</h3>

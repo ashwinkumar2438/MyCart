@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom:70px;
 }
 .App>div{
   margin-top:20px;

@@ -26,6 +26,11 @@
     background-color: lightcyan;
     flex-flow: row;
 }
+.mainbox img{
+    padding-top:10px;
+    height:150px;
+    width:150px;
+}
 .buttonsbox button{
     background-color: lightgreen;
     border:2px solid maroon;

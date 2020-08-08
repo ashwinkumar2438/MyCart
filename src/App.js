@@ -16,12 +16,13 @@ function App() {
       console.log(data);
       localStorage.setItem("fallbackdata",JSON.stringify(data))
       setdata(data.items||[]);
+    }).catch(()=>{
+      if(localStorage.fallbackdata){
+      let localdata=JSON.parse(localStorage.getItem("fallbackdata"));
+      setdata(localdata.items||[])
+      }
     })
-  },[]).catch(()=>{
-
-    let localdata=JSON.parse(localStorage.getItem("fallbackdata"));
-    setdata(localdata.items||[])
-  })
+  },[])
 
   let updateItem=(id,delta)=>{
     let alldata=[...data];

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MyCart/static/css/main.7edc5f7e.chunk.css",
-    "main.js": "/MyCart/static/js/main.006006f6.chunk.js",
-    "main.js.map": "/MyCart/static/js/main.006006f6.chunk.js.map",
+    "main.js": "/MyCart/static/js/main.dfb57643.chunk.js",
+    "main.js.map": "/MyCart/static/js/main.dfb57643.chunk.js.map",
     "runtime-main.js": "/MyCart/static/js/runtime-main.6764e873.js",
     "runtime-main.js.map": "/MyCart/static/js/runtime-main.6764e873.js.map",
     "static/js/2.77029847.chunk.js": "/MyCart/static/js/2.77029847.chunk.js",
     "static/js/2.77029847.chunk.js.map": "/MyCart/static/js/2.77029847.chunk.js.map",
     "index.html": "/MyCart/index.html",
-    "precache-manifest.350b4aa97c9928e531246ca6a31015fc.js": "/MyCart/precache-manifest.350b4aa97c9928e531246ca6a31015fc.js",
+    "precache-manifest.06b062af006a99e983c0c19d34931c34.js": "/MyCart/precache-manifest.06b062af006a99e983c0c19d34931c34.js",
     "service-worker.js": "/MyCart/service-worker.js",
     "static/css/main.7edc5f7e.chunk.css.map": "/MyCart/static/css/main.7edc5f7e.chunk.css.map",
     "static/js/2.77029847.chunk.js.LICENSE.txt": "/MyCart/static/js/2.77029847.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6764e873.js",
     "static/js/2.77029847.chunk.js",
     "static/css/main.7edc5f7e.chunk.css",
-    "static/js/main.006006f6.chunk.js"
+    "static/js/main.dfb57643.chunk.js"
   ]
 }

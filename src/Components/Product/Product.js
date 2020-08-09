@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Product.module.css";
 
-
+// component to create single product.
 const Product=(props)=>{
 
     let {mainbox,imagebox,contentbox,buttonsbox,discountbox}=styles;

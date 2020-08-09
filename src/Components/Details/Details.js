@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Details.module.css";
 
-
+// Footer Component. 
 const Details=(props)=>{
 
     return (

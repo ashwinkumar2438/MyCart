@@ -1,5 +1,6 @@
 import React,{Fragment} from "react";
 import style from "./Popup.module.css";
+// Final popup to be showed after buying.
 const Popup=(props)=>{
 
 

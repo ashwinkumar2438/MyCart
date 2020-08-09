@@ -10,6 +10,9 @@ function App() {
   let [totalQuantity,setQuantity]=useState(0);
   let[page,setPage]=useState("home")
   useEffect(()=>{
+
+    // FETCH JSON DATA FROM PUBLIC FOLDER
+    // keeping data stored in localstorage for offline caching.
     fetch(process.env.PUBLIC_URL+"/data.json").then(rawdata=>{
       return rawdata.json()
     }).then(data=>{
@@ -17,13 +20,14 @@ function App() {
       localStorage.setItem("fallbackdata",JSON.stringify(data))
       setdata(data.items||[]);
     }).catch(()=>{
-      if(localStorage.fallbackdata){
+      if("fallbackdata" in localStorage){
       let localdata=JSON.parse(localStorage.getItem("fallbackdata"));
       setdata(localdata.items||[])
       }
     })
   },[])
 
+  // update functionality to update item count and checkout details.
   let updateItem=(id,delta)=>{
     let alldata=[...data];
     let codata=[...checkoutdata];
@@ -37,14 +41,18 @@ function App() {
     let quantity=totalQuantity;
     total=Number(total)+(Number(itemdetails.price)*delta);
     quantity=quantity+delta;
+    codata=codata.filter(a=>a.count);
     setdata(alldata);
     setAmount(total);
     setQuantity(quantity);
     setcheckoutdata([...codata]);
   };
+  // variable declared to change page state.
   let changePage=(val)=>{
     setPage(val)
   }
+
+  // function to be called after buying product to reset all data.
   let clearData=()=>{
     let allitems=[...data];
     allitems.forEach(a=>a.count=0);

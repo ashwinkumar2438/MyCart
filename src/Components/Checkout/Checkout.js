@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import style from "./Checkout.module.css";
 import {Popup} from "../index";
-
+//Component for checkout page 
 const Checkout=(props)=>{
 
 
